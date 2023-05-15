@@ -60,7 +60,7 @@ class InstaBrute(object):
 
     def New_Br(self, user, pwd):
         link = 'https://www.instagram.com/accounts/login/'
-        login_url = 'https://www.instagram.com/accounts/login/ajax/'
+        login_url = 'https://www.instagram.com/accounts/p/ajax/'
 
         time = int(datetime.now().timestamp())
 
